@@ -1,7 +1,7 @@
 version: '3'
 services:
   postgres:
-    container_name: first-db
+    container_name: second-db
     image: "postgres:15"
     restart: always
     ports:
@@ -11,7 +11,7 @@ services:
       POSTGRES_USER: prlrelwx
       POSTGRES_PASSWORD: WIY7Sn4gxX22t1XBxlgeQNpqKfuS42r1
   web:
-    container_name: simple-app
+    container_name: simple-second-app
     build: .
     restart: always
     ports:
